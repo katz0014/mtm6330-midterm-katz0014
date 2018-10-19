@@ -1,0 +1,14 @@
+{
+  "name": "mtm6330-midterm-katz0014",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Daniel Katz <katz0014@algonquinlive.com>",
+  "license": "MIT",
+  "dependencies": {
+    "autoprefixer": "^9.1.5",
+    "cssnano": "^4.1.4",
+    "gulp": "^3.9.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sass": "^4.0.1"
+  }
+}

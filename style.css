@@ -1,0 +1,141 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+header {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+.logo {
+  flex-basis: 20%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  /* z-index: -100;
+  margin: 10px; */
+}
+
+.logo img {
+  height: 125%;
+  width: auto;
+}
+
+nav {
+  flex-grow: 1;
+}
+nav ul {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+nav ul li {
+  align-self: flex-end;
+  display: inline-block;
+}
+
+.corkboard {
+  display: none;
+}
+
+.mob-image img {
+  width: 100%;
+  height: auto;
+}
+
+.hit-the-floor {
+  font-size: 1.5rem;
+  color: #e5e5e5;
+  font-family: 'Montserrat', sans-serif;
+  padding-top: 20px;
+  padding-left: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: left;
+  text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9,
+    0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1),
+    0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2),
+    0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2),
+    0 20px 20px rgba(0, 0, 0, 0.15);
+}
+
+@media (min-width: 768px) {
+  .container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .pic-stack {
+    display: none;
+  }
+
+  body {
+    background: linear-gradient(to right, white, lightgrey);
+    margin: 0 auto;
+    padding: 0 auto;
+    height: 100%;
+    justify-content: space-evenly;
+  }
+
+  .hit-the-floor {
+    color: #e5e5e5;
+    font-size: 3em;
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 30px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9,
+      0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1),
+      0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2),
+      0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2),
+      0 20px 20px rgba(0, 0, 0, 0.15);
+  }
+
+  .hit-the-floor {
+    text-align: left;
+  }
+  .corkboard {
+    width: 100%;
+    visibility: visible;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    overflow: hidden;
+    padding: 2%;
+  }
+
+  .polaroid {
+    flex-grow: 1;
+    margin: 1%;
+    max-height: 400px;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .polaroid img {
+    border: 6px solid #ffe;
+    box-shadow: 5px 5px 10px black;
+    object-fit: cover;
+    max-width: 105%;
+  }
+
+  nav ul li {
+    list-style-type: none;
+    width: 60px;
+    align-items: center;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    height: 60px;
+  }
+}
